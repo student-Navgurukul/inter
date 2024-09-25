@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+body:hover {
+    background-color: #b2ebf2; /* Background color change on hover */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #00796b; /* Darker green text */
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border-left: 6px solid #ff6f61;
+    border-radius: 10px;
+    background-color: #f1f8e9; /* Soft green background */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.step:hover {
+    background-color: #aed581; /* Lighter green on hover */
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.step img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.step:hover img {
+    transform: rotate(10deg) scale(1.1); /* Rotate and enlarge image on hover */
+}
+
+.text h2 {
+    color: #00796b;
+    font-size: 22px;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.step:hover .text h2 {
+    color: #004d40; /* Darker green on hover */
+}
+
+.text p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.step:hover .text p {
+    color: #212121; /* Slightly darker text on hover */
+}
